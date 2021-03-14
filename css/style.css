@@ -1,0 +1,269 @@
+/* Basic for a whole document */
+
+html{
+    font-size: 100%;
+    line-height: 1.5rem;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+}
+
+body{
+    margin: 0 auto;
+    padding: 0;
+    min-height: 100vh; 
+    max-width: 1400px;
+}
+
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Navbar Styles */
+/*Navbar  responsive */
+nav{
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: white;
+    color: black;
+    font-family: 'Raleway', sans-serif;
+  
+  }
+  .logo ,a ,h4{
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .nav-links{
+      display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
+  .nav-links li{
+    list-style: none;
+  }
+  .nav-links a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: 14px;
+  }
+  .nav-links a:hover{
+    border-bottom: 3px solid black;
+}
+/* a.active {
+    border-bottom: 3px solid black;
+} */
+  
+  .burger{
+    display: none;
+    cursor: pointer;
+  }
+  .burger div{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    color:black;
+    margin: 5px;
+    transition: all 0.3s ease;
+  }
+
+
+/*Grid Gallery Styles*/
+.gallery-page{
+    padding: 0 1rem 10rem 1rem;
+}
+
+.gallery-span{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 300px;
+    grid-gap: 0.5rem;
+    grid-auto-flow: dense;
+}
+.gallery-item{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.gallery-img{
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+
+.gallery-img:hover{
+    transform: scale(1.1);
+}
+
+.w-1, .w-2, .w-3, .w-4, .w-5, .w-6{
+    grid-column: span 1;
+}
+
+.h-1, .h-2, .h-3, .h-4, .h-5, .h-6{
+    grid-row: span 1;
+}
+
+
+/*footer*/
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+       }
+       .copyright{
+        justify-content: center;
+        align-content: center;
+       }
+     
+
+/*Media queries mobile first!!! */
+@media(min-width:600px){
+    .header-nav{
+        line-height: 1.5rem;
+    }
+    .nav-menu{
+        width: 100%;
+    }
+    .nav-item{
+        flex: 1 0 10%;
+    }
+    /* Grid column and row spans for wider screen*/
+    .gallery-span{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .w-1{
+       grid-column: span 1; 
+    }
+    .w-2{
+        grid-column: span 2; 
+     }
+     .w-3{
+        grid-column: span 3; 
+     }
+     .w-4{
+        grid-column: span 4; 
+     }
+     .w-5{
+        grid-column: span 5; 
+     }
+     .w-6{
+        grid-column: span 6; 
+     }
+     .h-1{
+         grid-row: span 1;
+     }
+     .h-2{
+        grid-row: span 2;
+    }
+    .h-3{
+        grid-row: span 3;
+    }
+    .h-4{
+        grid-row: span 4;
+    }
+    .h-5{
+        grid-row: span 5;
+    }
+    .h-6{
+        grid-row: span 6;
+    }
+}
+
+@media(min-width:900px){
+.header-nav{
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin: 1rem auto 2rem auto;
+    line-height: 1rem;
+    }
+    .nav-item{
+        white-space: nowrap;
+    }
+    .nav-menu{
+        width: auto;
+    }
+    .logo{
+        margin: 0 0 0 0.3rem;
+    }
+}
+
+
+  
+/*Media querry for navbar */
+
+  @media screen and (max-width:1024px){
+    .nav-links{
+             width: 50%;
+  }
+  }
+  
+  @media screen and (max-width:768px){
+    
+    body{
+        overflow-x: hidden;
+    }
+   .nav-links{
+       position: absolute;
+       right: 0px;
+       height: 92vh;
+       top: 8vh;
+       background-color: white;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width: 40%;
+       transform: translateX(100%);
+       transition: all 0.7s ease;
+   }
+   .nav-links li{
+       opacity: 0;
+   }
+   .burger{
+       display: block;
+   }
+  }
+  .nav-active{
+    transform: translateX(0%);
+  }
+  
+  
+  
+  @keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+  }
+  
+  .toggle .line1{
+  transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2{
+    opacity: 0;
+  }
+  .toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  
