@@ -1,10 +1,12 @@
 /* Basic for a whole document */
-
+/* logo font */
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 html{
     font-size: 100%;
     line-height: 1.5rem;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
     height: 100%;
 }
 
@@ -43,9 +45,7 @@ nav{
     min-height: 8vh;
     background-color: white;
     color: black;
-    font-family: 'Raleway', sans-serif;
-  
-  }
+     }
   .logo ,a ,h4{
     color: black;
     text-transform: uppercase;
@@ -53,6 +53,11 @@ nav{
     font-size: 20px;
     text-decoration: none;
   }
+
+  .logo{
+    font-family: 'Merienda', cursive;
+  }
+  
   .nav-links{
       display: flex;
     justify-content:space-between;
@@ -64,9 +69,10 @@ nav{
   .nav-links a{
     color: black;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 400;
     letter-spacing: 2px;
-    font-size: 14px;
+    font-size: 16px;
+    font-family: 'Questrial', sans-serif;
   }
   .nav-links a:hover{
     border-bottom: 3px solid black;
@@ -86,6 +92,17 @@ nav{
     color:black;
     margin: 5px;
     transition: all 0.3s ease;
+  }
+
+  /* Text quote */
+  .quote{
+    font-family: 'Allura', cursive;
+  }
+  .quote q{
+      font-size: 18px;
+  }
+  .quote footer{
+      font-size: 14px;
   }
 
 
