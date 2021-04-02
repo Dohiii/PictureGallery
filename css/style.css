@@ -50,7 +50,7 @@ nav{
   }
   .nav-links{
       display: flex;
-    justify-content: space-around;
+    justify-content:space-between;
     width: 50%;
   }
   .nav-links li{
@@ -60,7 +60,7 @@ nav{
     color: black;
     text-decoration: none;
     font-weight: bold;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-size: 14px;
   }
   .nav-links a:hover{
