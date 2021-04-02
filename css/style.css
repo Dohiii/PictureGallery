@@ -96,13 +96,14 @@ nav{
 
   /* Text quote */
   .quote{
-    font-family: 'Allura', cursive;
+       font-family: 'Allura', cursive;
   }
   .quote q{
       font-size: 18px;
   }
   .quote footer{
-      font-size: 14px;
+font-size: 14px;
+margin-left: 60%;
   }
 
 
@@ -143,17 +144,60 @@ nav{
 
 
 /*footer*/
-footer{
-    width: 100%;
+/* footer */
+.footer{
     display: flex;
     justify-content: center;
-    align-content: center;
-       }
-       .copyright{
-        justify-content: center;
-        align-content: center;
-       }
-     
+    align-items: center;
+    font-family: 'Questrial', sans-serif;
+    border-top: 3px solid rgb(219, 218, 218);
+}
+.footer .content{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 500px;
+    justify-content: center;
+    align-items: center;
+    }
+.footer h1{
+    font-size: 20px;
+    font-weight: 400;
+       margin-top: 30px;
+}
+.footer p{
+    display: block;
+    font-size: 10px;
+    margin: 5px;
+}
+
+.footer .contact{
+display: flex;
+text-decoration: none;
+list-style: none;
+margin: 5px;
+flex-direction: column;
+margin-bottom: 60px;
+}
+.footer .social{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+.footer a{
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+}
+.footer a:hover{
+    color: rgb(97, 95, 95);
+}
+
+
+ 
 
 /*Media queries mobile first!!! */
 @media(min-width:600px){
@@ -166,6 +210,19 @@ footer{
     .nav-item{
         flex: 1 0 10%;
     }
+
+    .quote{
+        max-width: 60%;
+      font-family: 'Allura', cursive;
+    }
+    .quote q{
+        font-size: 18px;
+    }
+    .quote footer{
+  font-size: 14px;
+  margin-left: 80%;
+    }
+
     /* Grid column and row spans for wider screen*/
     .gallery-span{
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -206,6 +263,50 @@ footer{
     .h-6{
         grid-row: span 6;
     }
+
+/*footer*/
+/* footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Questrial', sans-serif;
+    border-top: 3px solid rgb(219, 218, 218);
+}
+.footer .content{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 500px;
+    justify-content: center;
+    align-items: center;
+    }
+.footer h1{
+    font-size: 40px;
+    font-weight: 400;
+       margin-top: 60px;
+}
+.footer p{
+    font-size: 20px;
+   
+}
+
+.footer .contact{
+display: flex;
+text-decoration: none;
+list-style: none;
+}
+.footer a{
+    margin: 10px;
+       font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+    list-style: none;
+}
+.footer a:hover{
+    color: rgb(97, 95, 95);
+}
+     
 }
 
 @media(min-width:900px){
