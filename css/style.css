@@ -1,7 +1,7 @@
 /* Basic for a whole document */
 /* logo font */
 @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Merienda&family=Parisienne&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 html{
     font-size: 100%;
@@ -96,17 +96,16 @@ nav{
 
   /* Text quote */
   .quote > *{
-    /* font-family: 'Caveat', cursive; */
-
-    font-family: 'Parisienne', cursive;
+    font-family: 'Allura', cursive;
   }
   .quote q{
-      font-size: 18px;
+      font-size: 20px;
       letter-spacing: 2px;
   }
   .quote footer{
-font-size: 14px;
+font-size: 18px;
 margin-left: 60%;
+
   }
 
 
@@ -293,10 +292,9 @@ justify-content: center;
     font-weight: 400;
        margin-top: 60px;
 }
-.footer p{
-    font-size: 20px;
-   
-}
+.footer .social a{
+    font-size: 30px;
+   }
 
 .footer .contact{
 display: flex;
