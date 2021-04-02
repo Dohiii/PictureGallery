@@ -206,7 +206,7 @@ footer{
 
 
   
-/*Media querry for navbar */
+/* Media querry for navbar
 
   @media screen and (max-width:1024px){
     .nav-links{
@@ -265,5 +265,5 @@ footer{
   .toggle .line3{
     transform: rotate(45deg) translate(-5px, -6px);
   }
-  
+   */
   

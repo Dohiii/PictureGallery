@@ -23,7 +23,7 @@ const navSlide = () => {
 navSlide();
 
 
-window.addEventListener("resize", function () {
+window.addEventListener('resize', function (resize) {
     const glightbox = document.querySelector('.glightbox');
     if (window.innerWidth < 700) resize.classList.remove("glightbox");
 });
