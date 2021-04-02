@@ -49,15 +49,15 @@ nav{
   .logo ,a ,h4{
     color: black;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
     font-size: 20px;
     text-decoration: none;
   }
 
-  .logo{
+  /* .logo{
     font-family: 'Merienda', cursive;
   }
-  
+   */
   .nav-links{
       display: flex;
     justify-content:space-between;
@@ -100,6 +100,7 @@ nav{
   }
   .quote q{
       font-size: 18px;
+      letter-spacing: 2px;
   }
   .quote footer{
 font-size: 14px;
