@@ -15,6 +15,11 @@ body{
     max-width: 1400px;
 }
 
+.wrapper{
+    overflow-x: hidden;
+    position: relative;
+}
+
 
 *,
 *::before,
@@ -229,9 +234,10 @@ footer{
        flex-direction: column;
        align-items: center;
        justify-content: space-evenly;
-       width: 40%;
+       width: 100%;
        transform: translateX(100%);
        transition: all 0.7s ease;
+       overflow-x: hidden;
    }
    .nav-links li{
        opacity: 0;
@@ -249,6 +255,7 @@ footer{
   }
   .nav-active{
     transform: translateX(0%);
+    
   }
   
   
