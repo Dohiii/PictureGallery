@@ -1,7 +1,7 @@
 /* Basic for a whole document */
 /* logo font */
 @import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 html{
     font-size: 100%;
@@ -96,14 +96,14 @@ nav{
 
   /* Text quote */
   .quote > *{
-    font-family: 'Allura', cursive;
+    font-family: 'Italianno', cursive;
   }
   .quote q{
       font-size: 20px;
       letter-spacing: 2px;
   }
   .quote footer{
-font-size: 18px;
+font-size: 20px;
 margin-left: 60%;
 
   }
