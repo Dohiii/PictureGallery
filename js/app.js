@@ -29,3 +29,35 @@ navSlide();
 // });
 
 
+const topLink = document.querySelector(".top-link");
+
+window.addEventListener("scroll", function () {
+    const scrollHeight = window.pageYOffset;
+    if (scrollHeight > 300) {
+        topLink.classList.add("show-link");
+    } else {
+        topLink.classList.remove("show-link");
+    }
+});
+
+
+
+
+
+
+const scrollLinks = document.querySelectorAll(".scroll-link");
+scrollLinks.forEach((link) => {
+    link.addEventListener("click", (e) => {
+        // prevent default
+        e.preventDefault();
+        // navigate to specific spot
+
+
+        window.scrollTo({
+            left: 0,
+            top: 0,
+        });
+        // close
+        linksContainer.style.height = 0;
+    });
+});
